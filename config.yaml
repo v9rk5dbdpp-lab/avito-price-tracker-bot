@@ -1,0 +1,20 @@
+telegram:
+  bot_token: "PUT_YOUR_TOKEN_HERE"
+  admin_chat_id: "PUT_YOUR_TELEGRAM_ID_HERE"
+
+radar:
+  check_interval_minutes: 15
+  history_days_for_average: 14
+  discount_threshold_percent: 20
+  min_items_for_average: 5
+  max_items_per_check: 30
+
+database:
+  path: "price_radar.db"
+
+sources:
+  enabled:
+    - avito
+    - ozon
+    - wildberries
+    - auto_ru
