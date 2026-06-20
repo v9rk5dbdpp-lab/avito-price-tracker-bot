@@ -1,0 +1,47 @@
+id: iphone
+name: iPhone
+aliases:
+  - iphone
+  - айфон
+  - айфoн
+category: phone
+brand: Apple
+family: iPhone
+source_default: avito
+steps:
+  - key: generation
+    title: Выберите поколение iPhone
+    options:
+      - label: iPhone 14
+        value: "14"
+      - label: iPhone 15
+        value: "15"
+      - label: iPhone 16
+        value: "16"
+      - label: iPhone 17
+        value: "17"
+      - label: iPhone 18
+        value: "18"
+  - key: variant
+    title: Выберите модель
+    options:
+      - label: Обычный
+        value: ""
+      - label: Plus
+        value: Plus
+      - label: Pro
+        value: Pro
+      - label: Pro Max
+        value: Pro Max
+  - key: storage
+    title: Выберите объём памяти
+    options:
+      - label: 128GB
+        value: 128GB
+      - label: 256GB
+        value: 256GB
+      - label: 512GB
+        value: 512GB
+      - label: 1TB
+        value: 1TB
+query_template: "iPhone {generation} {variant} {storage}"
