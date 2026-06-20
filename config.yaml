@@ -1,5 +1,5 @@
 telegram:
-  bot_token: "PUT_YOUR_TOKEN_HERE"
+  bot_token: "8524537797:AAFfX0LhHqArgXv_94wwTrH7UNWAqxeLJ90"
   admin_chat_id: "PUT_YOUR_TELEGRAM_ID_HERE"
 
 radar:
