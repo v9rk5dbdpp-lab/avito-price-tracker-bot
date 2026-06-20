@@ -1,5 +1,10 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime
+
+
+def utc_now_iso() -> str:
+    return datetime.utcnow().isoformat(timespec="seconds")
+
 
 @dataclass(slots=True)
 class MarketItem:
@@ -11,4 +16,4 @@ class MarketItem:
     location: str | None = None
     seller: str | None = None
     published_at: str | None = None
-    found_at: str = datetime.utcnow().isoformat(timespec="seconds")
+    found_at: str = field(default_factory=utc_now_iso)
